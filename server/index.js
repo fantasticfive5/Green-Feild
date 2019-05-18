@@ -1,6 +1,7 @@
 var express = require('express');
 var bodyParser = require('body-parser');
-// UNCOMMENT THE DATABASE YOU'D LIKE TO USE
+var mongoose = require('mongoose');// UNCOMMENT THE DATABASE YOU'D LIKE TO USE
+
 
 
 //var items = require('../database-mongo');
@@ -27,16 +28,29 @@ app.get("/", (req,res) => {
   res.send(" This is working !")
 })
 
-app.post ('/signin', (req,res)=> {
-  const username = req.body.username;
+app.post ('/signinUser', (req,res)=> {
+  const email = req.body.email;
   const password = req.body.password;
   console.log("ok")
+<<<<<<< HEAD
 
   res.send("Done")
    
   
 });
+=======
+  res.send("Done")
+});
 
+app.get('/',(req,res)=>{
+   res.send("User ")
+})
+>>>>>>> 0f26452fc0aefb0952283086b56e877cea1e5647
+
+app.post('/signinClient',(req, res) => {
+   const email = req.body.email;
+   const password = req.body.password
+})
 
 app.listen(port, function() {
   console.log(`listening on port ${port}`);
