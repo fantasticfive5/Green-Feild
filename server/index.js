@@ -1,13 +1,13 @@
 var express = require('express');
 var bodyParser = require('body-parser');
-// UNCOMMENT THE DATABASE YOU'D LIKE TO USE
+var mongoose = require('mongoose');// UNCOMMENT THE DATABASE YOU'D LIKE TO USE
 
 
 //var items = require('../database-mongo');
 
 
 var app = express();
-const port = 3001;
+const port = 3000;
 // UNCOMMENT FOR REACT
 app.use(express.static(__dirname + '/../react-client/dist'));
 
@@ -39,7 +39,7 @@ app.get('/',(req,res)=>{
 })
 
 app.post('/signinClient',(req, res) => {
-   const email = req.body.email,
+   const email = req.body.email;
    const password = req.body.password
 })
 
