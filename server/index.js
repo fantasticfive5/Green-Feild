@@ -32,20 +32,11 @@ app.post ('/signinUser', (req,res)=> {
   const email = req.body.email;
   const password = req.body.password;
   console.log("ok")
-<<<<<<< HEAD
 
   res.send("Done")
    
   
 });
-=======
-  res.send("Done")
-});
-
-app.get('/',(req,res)=>{
-   res.send("User ")
-})
->>>>>>> 0f26452fc0aefb0952283086b56e877cea1e5647
 
 app.post('/signinClient',(req, res) => {
    const email = req.body.email;

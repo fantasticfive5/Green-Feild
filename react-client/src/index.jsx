@@ -21,7 +21,7 @@ class App extends React.Component {
     return (<div>
       <h1>SignIn</h1>
       <SignIn />
-      <SignUp repos = {this.state.repos} />
+      {/* <SignUp repos = {this.state.repos} /> */}
     </div>)
   }
 }
