@@ -3,6 +3,7 @@ var bodyParser = require('body-parser');
 var mongoose = require('mongoose');// UNCOMMENT THE DATABASE YOU'D LIKE TO USE
 
 
+
 //var items = require('../database-mongo');
 
 
@@ -31,12 +32,11 @@ app.post ('/signinUser', (req,res)=> {
   const email = req.body.email;
   const password = req.body.password;
   console.log("ok")
-  res.send("Done")
-});
 
-app.get('/',(req,res)=>{
-   res.send("User ")
-})
+  res.send("Done")
+   
+  
+});
 
 app.post('/signinClient',(req, res) => {
    const email = req.body.email;
