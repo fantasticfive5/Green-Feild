@@ -2,10 +2,9 @@ var express = require('express');
 var bodyParser = require('body-parser');
 // UNCOMMENT THE DATABASE YOU'D LIKE TO USE
 
+
 //var items = require('../database-mongo');
-var database = {places:{"RBK": [{location: 'Mecca Mall'}], 
-                        "RBK2": [{location: 'City Mall'}]}, 
-                users: {}};
+
 
 var app = express();
 const port = 3000;
@@ -25,19 +24,18 @@ app.get('/', function (req, res) {
   });
 });
 app.get("/", (req,res) => {
-  console.log("rawan");
-  res.send("hi")
+  res.send(" This is working !")
 })
 
 app.post ('/signin', (req,res)=> {
   const username = req.body.username;
   const password = req.body.password;
+  console.log("ok")
+
+  res.send("Done")
+   
   
-   if(! database.users[username]){
-       return res.status(HTTP_UNAUTHORIZED).send('Please sign up');
-   }
-  
-})
+});
 
 
 app.listen(port, function() {
