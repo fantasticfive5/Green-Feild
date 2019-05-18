@@ -1,5 +1,6 @@
 var express = require('express');
 var bodyParser = require('body-parser');
+const mongoose = require('mongoose');
 // UNCOMMENT THE DATABASE YOU'D LIKE TO USE
 
 
