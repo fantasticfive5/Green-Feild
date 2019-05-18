@@ -10,7 +10,7 @@ import SignUp from './auth/SignUp.jsx';
 class App extends React.Component {
   constructor(props) {
     super(props);
-    this.state = { 
+    this.state = {
     }
 
 
@@ -19,7 +19,6 @@ class App extends React.Component {
 
   updateState(data){
     this.setState({
-      repos : data
     })
   }
   

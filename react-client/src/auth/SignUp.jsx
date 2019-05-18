@@ -7,6 +7,7 @@ class SignUp extends Component {
         this.state={
             firstName : "",
             lasttName : "",
+            email : "",
             password : ""
         }
         this.changed = this.changed.bind(this);
@@ -22,7 +23,9 @@ class SignUp extends Component {
                 <div>
                <input type ="text" name= "firstName" placeholder="Enter Your FirstName" onChange = {this.changed.bind(this)} />
                <input type ="text" name= "lasttName" placeholder="Enter Your LastName" onChange = {this.changed.bind(this)} />
-                <input type ="text" name= "password" placeholder="Enter Your Password" onChange = {this.changed.bind(this)} />
+                <input type ="text" name= "email" placeholder="Enter Your email" onChange = {this.changed.bind(this)} />
+                <input type ="password" name= "password" placeholder="Enter Your Password" onChange = {this.changed.bind(this)} />
+              
                 </div>
             
             
