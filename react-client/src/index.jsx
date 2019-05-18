@@ -10,11 +10,11 @@ import SignUp from './auth/SignUp.jsx';
 class App extends React.Component {
   constructor(props) {
     super(props);
-    this.state = { 
-    
+    this.state = {
     }
 
 
+  
   }
 
   updateState(data){
@@ -26,9 +26,8 @@ class App extends React.Component {
   render () {
     return (<div>
 
-      <h1>rawan</h1>
+      <h1>SginIn</h1>
 
-      <h1>Item List</h1>
       <SignUp repos = {this.state.repos} />
       
 
