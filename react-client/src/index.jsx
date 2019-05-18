@@ -11,12 +11,7 @@ class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = { 
-<<<<<<< HEAD
-
     
-=======
-    repos : []
->>>>>>> b16e6c3332b02bfb9f4ad5a37fc3c7f73e35e25f
     }
 
 
@@ -24,7 +19,6 @@ class App extends React.Component {
 
   updateState(data){
     this.setState({
-      repos : data
     })
   }
   
