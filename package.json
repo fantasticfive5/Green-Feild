@@ -17,8 +17,14 @@
     "webpack": "^2.7.0"
   },
   "dependencies": {
+    "axios": "^0.18.0",
     "body-parser": "^1.17.2",
     "bootstrap": "^4.3.1",
+<<<<<<< HEAD
+    "express": "^4.17.0",
+    "jquery": "^3.4.1",
+    "mongoose": "^4.13.18",
+=======
 <<<<<<< HEAD
     "express": "^4.17.0",
     "mongoose": "^4.8.6",
@@ -26,10 +32,12 @@
     "express": "^4.15.0",
     "mongoose": "^4.13.18",
 >>>>>>> 0f26452fc0aefb0952283086b56e877cea1e5647
+>>>>>>> 19f0bdde9b61edf514f36aa611fd801bd416f0ad
     "nodemon": "^1.19.0",
     "react": "^15.6.2",
     "react-bootstrap": "^1.0.0-beta.8",
     "react-dom": "^15.6.2",
     "reactstrap": "^8.0.0"
-  }
+  },
+  "proxy": "http://localhost:3000/"
 }

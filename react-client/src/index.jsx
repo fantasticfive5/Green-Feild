@@ -10,7 +10,9 @@ class App extends React.Component {
     this.state = {
       repos: []
     }
-    // console.log(this.props.repos)
+
+
+
   }
   updateState(data) {
     this.setState({
@@ -19,9 +21,13 @@ class App extends React.Component {
 
   render() {
     return (<div>
-      <h1>SignIn</h1>
-      <SignIn />
-      {/* <SignUp repos = {this.state.repos} /> */}
+
+      <h1>SginIn</h1>
+
+      <SignUp repos = {this.state.repos} />
+
+
+
     </div>)
   }
 }
