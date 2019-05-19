@@ -33,10 +33,6 @@ const shop = new Schema({
     workkinghour: { type: Number },
     specialties: { type: String },
     phoneNumber: { type: Number, required: true }
-
-
-
-
 });
 
 // const test = new usersSchema({firstName : "yazan" ,lastName : "Najjar" , email : "YAZANANANANAN" , phoneNumber: 123123 , password : "ASSAD" })

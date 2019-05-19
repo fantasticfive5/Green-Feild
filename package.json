@@ -19,14 +19,8 @@
   "dependencies": {
     "body-parser": "^1.17.2",
     "bootstrap": "^4.3.1",
-<<<<<<< HEAD
     "express": "^4.17.0",
-    "mongoose": "^4.8.6",
-=======
-    "express": "^4.15.0",
     "mongoose": "^4.13.18",
->>>>>>> 0f26452fc0aefb0952283086b56e877cea1e5647
-    "nodemon": "^1.19.0",
     "react": "^15.6.2",
     "react-bootstrap": "^1.0.0-beta.8",
     "react-dom": "^15.6.2",
