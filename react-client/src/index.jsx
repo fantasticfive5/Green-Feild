@@ -7,9 +7,8 @@ import SignUp from './auth/SignUp.jsx';
 class App extends React.Component {
   constructor(props) {
     super(props);
-    this.state = {
-      repos: [],
-      nextPage: SignIn
+    this.state = { 
+    repos : []
     }
 
 
