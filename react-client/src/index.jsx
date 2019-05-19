@@ -14,14 +14,14 @@ class App extends React.Component {
     }
 
 
-  
+
   }
 
   updateState(data){
     this.setState({
     })
   }
-  
+
 
   render () {
     return (<div>
@@ -29,14 +29,14 @@ class App extends React.Component {
       <h1>SginIn</h1>
 
       <SignUp repos = {this.state.repos} />
-      
 
-     
+
+
     </div>)
   }
 }
 
 
- 
+
 
 ReactDOM.render(<App />, document.getElementById('app'));
