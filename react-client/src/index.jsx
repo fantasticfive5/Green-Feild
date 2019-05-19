@@ -7,9 +7,8 @@ import SignUp from './auth/SignUp.jsx';
 class App extends React.Component {
   constructor(props) {
     super(props);
-    this.state = {
-      repos: [],
-      nextPage: SignIn
+    this.state = { 
+    repos : []
     }
 
 
@@ -31,12 +30,13 @@ handleChange(event){
   })
 }
 
+
   render() {
     return (
       <form>
         <div className='homePage'><center>
 
-          <button onChange= {this.change.bind(this)}>
+          <button onChange= {this.change.bind(this)} >
             Car Owner
           </button> <br>
           </br>
@@ -53,7 +53,11 @@ handleChange(event){
       // </div>
     )
 
+
   }
 }
+
+
+
 
 ReactDOM.render(<App />, document.getElementById('app'));

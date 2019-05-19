@@ -1,10 +1,12 @@
 var express = require('express');
 var bodyParser = require('body-parser');
 const mongoose = require('mongoose');
+//const jwt = require('jsonwebtoken');
 // UNCOMMENT THE DATABASE YOU'D LIKE TO USE
 
 
 //var items = require('../database-mongo');
+
 
 
 const app = express();
@@ -32,26 +34,24 @@ app.get("/", (req, res) => {
   res.send(" This is working !")
 })
 
-// app.post ('/signinUser', (req,res)=> {
-//   const email = req.body.email;
-//   const password = req.body.password;
-//   console.log("ok")
-//   res.send("Done")
+app.post ('/signinUser', (req,res)=> {
+  const email = req.body.email;
+  const password = req.body.password;
+  console.log("ok")
+  res.send("Done")
 
 
-// });
+});
 
 app.post('/signUp', (req, res) => {
-  const email = req.body.email;
-  const username = req.body.username;
+  const firstName = req.body.firstName;
+  const lastName = req.body.lastName;
   const password = req.body.password;
   console.log("ok")
   res.send("Done")
 });
 
 app.post('/signinClient',(req, res) => {
-  const firstName = req.body.firstName;
-  const lastName = req.body.lastName;
    const email = req.body.email;
    const password = req.body.password
 })
