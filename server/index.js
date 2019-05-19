@@ -32,14 +32,14 @@ app.get("/", (req, res) => {
   res.send(" This is working !")
 })
 
-app.post ('/signinUser', (req,res)=> {
-  const email = req.body.email;
-  const password = req.body.password;
-  console.log("ok")
-  res.send("Done")
+// app.post ('/signinUser', (req,res)=> {
+//   const email = req.body.email;
+//   const password = req.body.password;
+//   console.log("ok")
+//   res.send("Done")
 
 
-});
+// });
 
 app.post('/signUp', (req, res) => {
   const email = req.body.email;
@@ -50,6 +50,8 @@ app.post('/signUp', (req, res) => {
 });
 
 app.post('/signinClient',(req, res) => {
+  const firstName = req.body.firstName;
+  const lastName = req.body.lastName;
    const email = req.body.email;
    const password = req.body.password
 })
