@@ -32,7 +32,7 @@ handleChange(event){
 }
 
   render() {
-<<<<<<< HEAD
+
     return (
       <form>
         <div className='homePage'><center>
@@ -52,31 +52,7 @@ handleChange(event){
       //   <SignUp />
       //   {/* <SignUp repos = {this.state.repos} /> */}
       // </div>
-    )
-=======
-    return (<div>
-<<<<<<< HEAD
-=======
-
-      <h1>SginIn</h1>
-
-      <SignUp repos = {this.state.repos} />
-
-
-
-    </div>)
+    )};
+    
   }
-}
->>>>>>> 17aa294bf3a3ba0da039e0818940d0e15ae715b5
-
-      <h1>SginIn</h1>
-
-      <SignUp repos = {this.state.repos} />
-
-
-
-    </div>)
->>>>>>> 17aa294bf3a3ba0da039e0818940d0e15ae715b5
-  }
-}
 ReactDOM.render(<App />, document.getElementById('app'));
