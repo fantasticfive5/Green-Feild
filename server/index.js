@@ -32,7 +32,7 @@ app.get("/", (req, res) => {
   res.send(" This is working !")
 })
 
-app.post('/signin', (req, res) => {
+app.post ('/signinUser', (req,res)=> {
   const email = req.body.email;
   const password = req.body.password;
   console.log("ok")
@@ -49,6 +49,10 @@ app.post('/signUp', (req, res) => {
   res.send("Done")
 });
 
+app.post('/signinClient',(req, res) => {
+   const email = req.body.email;
+   const password = req.body.password
+})
 
 app.listen(port, function () {
   console.log(`listening on port ${port}`);
