@@ -1,11 +1,15 @@
-var express = require('express');
-var bodyParser = require('body-parser');
+const express = require('express');
+const bodyParser = require('body-parser');
 const mongoose = require('mongoose');
+<<<<<<< HEAD
 //const jwt = require('jsonwebtoken');
+=======
+const bcrypt = require("bcrypt");
+>>>>>>> 454bfd7a7683ddb4380ebad212ac6fc4ca9d504b
 // UNCOMMENT THE DATABASE YOU'D LIKE TO USE
 
 
-//var items = require('../database-mongo');
+//const items = require('../database-mongo');
 
 
 
