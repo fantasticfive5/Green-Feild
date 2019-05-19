@@ -16,7 +16,7 @@ class SignIn extends Component {
   render() {
     return (
       <div>
-        Hello SHABA7<br>
+        <br>
         </br>
         <input type="text" name="email" placeholder="Enter Your email" onChange={this.changed.bind(this)} /><br>
         </br>
