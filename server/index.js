@@ -1,5 +1,6 @@
 var express = require('express');
 var bodyParser = require('body-parser');
+var bcrypt = require('bcrypt');
 const mongoose = require('mongoose');
 // UNCOMMENT THE DATABASE YOU'D LIKE TO USE
 
@@ -32,13 +33,33 @@ app.get("/", (req, res) => {
   res.send(" This is working !")
 })
 
-app.post ('/signinUser', (req,res)=> {
-  const email = req.body.email;
-  const password = req.body.password;
-  console.log("ok")
-  res.send("Done")
+// app.post ('/signinUser', (req,res)=> {
+//   // const email = req.body.email;
+//   // const password = req.body.password;
+//   // console.log("ok")
+//   // res.send("Done")
 
 
+// });
+app.post('/signinUser', function (req, res) {
+  dbmongo.signinUser.findOne({
+       where: {
+           email: req.body.email
+              }
+  }).then(function (signinUser) {
+      if (!signinUser) {
+         res.redirect('/');
+      } else {
+bcrypt.compare(req.body.password, signinUser.password, function (err, result) {
+     if (result == true) {
+         res.redirect('/home');
+     } else {
+      res.send('Incorrect password');
+      res.redirect('/');
+     }
+   });
+  }
+});
 });
 
 app.post('/signUp', (req, res) => {
