@@ -8,25 +8,52 @@ class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      repos: []
+      repos: [],
+      nextPage: SignIn
     }
-    // console.log(this.props.repos)
+
+
+
   }
   updateState(data) {
     this.setState({
     })
   }
-
-  render() {
-    return (<div>
-      <h1>SignIn</h1>
-      <SignIn />
-      {/* <SignUp repos = {this.state.repos} /> */}
-    </div>)
-  }
+  
+change(e){
+  console.log('5ara 3alaik motasem')
+  this.setState({ [e.target.name]: e.target.value })
+}
+handleChange(event){
+  this.setState({
+    email : this.props.email,
+     password : this.props.password
+  })
 }
 
+  render() {
+    return (
+      <form>
+        <div className='homePage'><center>
 
+          <button onChange= {this.change.bind(this)}>
+            Car Owner
+          </button> <br>
+          </br>
+          <button onChange= {this.change.bind(this)}>
+            Shop Owner
+            </button>
+        </center>
+        </div>
+      </form>
+      // <div>
+      //   <h1>SignUp</h1>
+      //   <SignUp />
+      //   {/* <SignUp repos = {this.state.repos} /> */}
+      // </div>
+    )
 
+  }
+}
 
 ReactDOM.render(<App />, document.getElementById('app'));
