@@ -4,22 +4,22 @@ import ReactDOM from 'react-dom';
 // import { Button, Modal, OverlayTrigger, Popover, Tooltip, Nav, NavItem, Row, Col, FormGroup, FieldGroup, Checkbox,Form } from 'react-bootstrap'
 import SignIn from './auth/SignIn.jsx';
 import SignUp from './auth/SignUp.jsx';
+
 class App extends React.Component {
   constructor(props) {
     super(props);
-    this.state = {
-      repos: [],
-      nextPage: SignIn
+    this.state = { 
+    repos : []
     }
 
-
-
   }
-  updateState(data) {
+  updateState(data){
     this.setState({
+      repos : data
     })
   }
   
+<<<<<<< HEAD
 change(e){
   console.log('5ara 3alaik motasem')
   this.setState({ [e.target.name]: e.target.value })
@@ -53,6 +53,26 @@ handleChange(event){
       //   {/* <SignUp repos = {this.state.repos} /> */}
       // </div>
     )};
+<<<<<<< HEAD
     
   }
+=======
+  }
+=======
+  render () {
+    return (<div>
+
+      <h1>rawan</h1>
+
+      <h1>Item List</h1>
+      <SignUp repos = {this.state.repos} /> 
+    </div>)
+  }
+}
+
+
+ 
+
+>>>>>>> 61e6134b020f48d0624b0b60e06712010196e302
+>>>>>>> 1308c6500615366c15547e92dc472f87ab3926f9
 ReactDOM.render(<App />, document.getElementById('app'));
