@@ -53,6 +53,10 @@ handleChange(event){
       //   {/* <SignUp repos = {this.state.repos} /> */}
       // </div>
     )};
+<<<<<<< HEAD
+    
+  }
+=======
   }
 =======
   render () {
@@ -70,4 +74,5 @@ handleChange(event){
  
 
 >>>>>>> 61e6134b020f48d0624b0b60e06712010196e302
+>>>>>>> 1308c6500615366c15547e92dc472f87ab3926f9
 ReactDOM.render(<App />, document.getElementById('app'));
