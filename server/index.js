@@ -1,10 +1,11 @@
-var express = require('express');
-var bodyParser = require('body-parser');
+const express = require('express');
+const bodyParser = require('body-parser');
 const mongoose = require('mongoose');
+const bcrypt = require("bcrypt");
 // UNCOMMENT THE DATABASE YOU'D LIKE TO USE
 
 
-//var items = require('../database-mongo');
+//const items = require('../database-mongo');
 
 
 const app = express();
