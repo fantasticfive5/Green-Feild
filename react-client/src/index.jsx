@@ -18,10 +18,8 @@ class App extends React.Component {
       repos : data
     })
   }
-  
 
 change(e){
-  console.log('5ara 3alaik motasem')
   this.setState({ [e.target.name]: e.target.value })
 }
 handleChange(event){
@@ -53,6 +51,10 @@ handleChange(event){
       //   {/* <SignUp repos = {this.state.repos} /> */}
       // </div>
     )};
+
+ 
+
+ 
 }
 
 ReactDOM.render(<App />, document.getElementById('app'));
