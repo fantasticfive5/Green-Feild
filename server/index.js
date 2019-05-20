@@ -68,7 +68,7 @@ app.post('/signinClient', (req, res) => {
     const existPass = userName.password;
     bcrypt.compare(password, existPass).then(function (Matching) {
       if (Matching) {
-        const token = jwt.sign({ username: user.username }, SECRET_KEY, { expiresIn: 2000 });
+        const token = jwt.sign({ username: user.username }, SECRET_KEY, { expiresIn: 5000 });
         return res.send({ token: token });
       } else {
         return res.status(HTTP_UNAUTHORIZED).send({ error: 'Incorrect password' });
