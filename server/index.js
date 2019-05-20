@@ -6,7 +6,8 @@ const mongoose = require('mongoose');
 
 
 //const items = require('../database-mongo');
-
+// app.use(bodyParser);
+// app.use(cors());
 
 
 const app = express();
