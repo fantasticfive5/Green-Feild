@@ -19,7 +19,7 @@ class App extends React.Component {
     })
   }
   
-<<<<<<< HEAD
+
 change(e){
   console.log('5ara 3alaik motasem')
   this.setState({ [e.target.name]: e.target.value })
@@ -53,26 +53,6 @@ handleChange(event){
       //   {/* <SignUp repos = {this.state.repos} /> */}
       // </div>
     )};
-<<<<<<< HEAD
-    
-  }
-=======
-  }
-=======
-  render () {
-    return (<div>
-
-      <h1>rawan</h1>
-
-      <h1>Item List</h1>
-      <SignUp repos = {this.state.repos} /> 
-    </div>)
-  }
 }
 
-
- 
-
->>>>>>> 61e6134b020f48d0624b0b60e06712010196e302
->>>>>>> 1308c6500615366c15547e92dc472f87ab3926f9
 ReactDOM.render(<App />, document.getElementById('app'));
