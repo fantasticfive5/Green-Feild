@@ -63,15 +63,15 @@ app.post('/signinClient', (req, res) => {
   const password = req.body.password;
   userName.findOne({ firstName: firstName }).then(function (user) {
     if (!userName) {
-      return res.status(HttP_AUNAUTHORIZED).send({ error: "You Can Sign Up Here" });
+      return res.status(HTTP_AUNAUTHORIZED).send({ error: "You Can Sign Up Here" });
     }
     const existPass = userName.password;
     bcrypt.compare(password, existPass).then(function (Matching) {
       if (Matching) {
-        const token = jwt.sign({ username: user.username }, SECRET_KEY, { expiresIn: 4000 });
+        const token = jwt.sign({ username: user.username }, SECRET_KEY, { expiresIn: 2000 });
         return res.send({ token: token });
       } else {
-        return res.status(HTTP_UNAUTHORIZED).send({ error: 'Wrong password' });
+        return res.status(HTTP_AUNAUTHORIZED).send({ error: 'Incorrect password' });
       }
     });
   });
