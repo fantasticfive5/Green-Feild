@@ -54,15 +54,7 @@ handleChange(event){
 
  
 
-  render () {
-    return (<div>
-
-      <h1>rawan</h1>
-
-      <h1>Item List</h1>
-      <SignUp repos = {this.state.repos} /> 
-    </div>)
-  }
+ 
 }
 
 ReactDOM.render(<App />, document.getElementById('app'));
